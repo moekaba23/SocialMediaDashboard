@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: ;
+}
+
+.header {
+  width: 80%;
+  padding: 2% 0;
+  margin: auto;
+}
+
+.social-media {
+  width: 80%;
+  margin: auto;
+}
+
+.accounts {
+  padding: 2em 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.overview {
+  padding: 2em 0;
+}
+
+.today {
+  display: flex;
+  justify-content: space-between;
+}
