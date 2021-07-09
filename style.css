@@ -16,13 +16,19 @@
   margin: auto;
 }
 
-p, h2 {
+p {
+  font-size: .8em;
+  color: #777;
+  margin-top: 10px;
+}
+
+h2 {
   color: #777;
   margin-top: 10px;
 }
 
 h3 {
-  color: #777;
+  color: #b3b3b3;
   text-transform: uppercase;
 }
 
@@ -70,10 +76,20 @@ h3 {
 }
 
 .overview {
-  padding: 2em 0;
+  padding: 0;
+}
+
+.overview .accounts {
+  padding-bottom: 0;
 }
 
 .today {
   display: flex;
   justify-content: space-between;
+}
+
+.likes {
+  display: flex;
+  justify-content: space-between;
+  padding: .5em 1em;
 }
