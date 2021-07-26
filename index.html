@@ -1,220 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
 
-  <title>Social Media Dashboard</title>
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; margin-top: 2em;}
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <section class="header">
-    <div class="header-left">
-      <h1>Social Media Dashboard</h1>
-      <p>Total Followers: 3,370</p>
-    </div>
-    <div class="header-right">
+    <title>Social Media Dashboard</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution { font-size: 11px; text-align: center; margin-top: 2em;}
+      .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+  </head>
+  <body id="body">
+    <section class="header">
+      <div class="header-text">
+        <h1>Social Media Dashboard</h1>
+        <p>Total Followers: 3,370</p>
+      </div>
+      <div class="header-btn">
+        <div class="toggle">
+          <p>Dark Mode</p>
+          <input type="checkbox" />
+          <span class="dark-toggle"></span>
+        </div>
+      </div>
 
-    </div>
-  </section>
-  <section class="social-media">
-    <div class="accounts">
-      <div class="accounts-content">
-        <div class="content">
-          <div class="username">
-            <img src="images/icon-facebook.svg" alt="">
-            <p>&nbsp; @moekaba</p>
-          </div>
-          <h1>1050</h1>
-          <h4>Followers</h4>
-          <div class="username">
-            <img src="images/icon-up.svg" alt="">
-            <p>&nbsp; 13 today</p>
-          </div>
+        <!--
+        <div id="dark-btn" onclick="darkBtn">
+          <input type="checkbox" />
+          <span></span>
         </div>
-      </div>
-      <div class="accounts-content">
-        <div class="content">
-          <div class="username">
-            <img src="images/icon-twitter.svg" alt="">
-            <p>&nbsp; @moekaba</p>
-          </div>
-          <h1>1203</h1>
-          <h4>Followers</h4>
-          <div class="username">
-            <img src="images/icon-up.svg" alt="">
-            <p>&nbsp; 155 today</p>
-          </div>
-        </div>
-      </div>
-      <div class="accounts-content">
-        <div class="content">
-          <div class="username">
-            <img src="images/icon-instagram.svg" alt="">
-            <p>&nbsp; @moekaba</p>
-          </div>
-          <h1>769</h1>
-          <h4>Followers</h4>
-          <div class="username">
-            <img src="images/icon-up.svg" alt="">
-            <p>&nbsp; 12 today</p>
-          </div>
-        </div>
-      </div>
-      <div class="accounts-content">
-        <div class="content">
-          <div class="username">
-            <img src="images/icon-youtube.svg" alt="">
-            <p>&nbsp; Moe Kaba</p>
-          </div>
-          <h1>348</h1>
-          <h4>Followers</h4>
-          <div class="username">
-            <img src="images/icon-up.svg" alt="">
-            <p>&nbsp; 2 today</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="overview">
-      <h3>Overview - Today</h3>
+        -->
+    </section>
+    <section class="social-media">
       <div class="accounts">
-        <div class="overview-content">
+        <div class="accounts-content">
           <div class="content">
-            <div class="likes">
-              <p>Page Views</p>
+            <div class="username">
               <img src="images/icon-facebook.svg" alt="">
+              <p>&nbsp; @moekaba</p>
             </div>
-            <div class="likes">
-              <h2>102</h2>
-              <div class="username">
-                <img src="images/icon-up.svg" alt="">
-                <p>&nbsp; 9%</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="overview-content">
-          <div class="content">
-            <div class="likes">
-              <p>Likes</p>
-              <img src="images/icon-facebook.svg" alt="">
-            </div>
-            <div class="likes">
-              <h2>56</h2>
-              <div class="username">
-                <img src="images/icon-up.svg" alt="">
-                <p>&nbsp; 10%</p>
-              </div>
+            <h1>1050</h1>
+            <h4>Followers</h4>
+            <div class="username">
+              <img src="images/icon-up.svg" alt="">
+              <p>&nbsp; 13 today</p>
             </div>
           </div>
         </div>
-        <div class="overview-content">
+        <div class="accounts-content">
           <div class="content">
-            <div class="likes">
-              <p>Page Views</p>
-              <img src="images/icon-instagram.svg" alt="">
-            </div>
-            <div class="likes">
-              <h2>38</h2>
-              <div class="username">
-                <img src="images/icon-up.svg" alt="">
-                <p>&nbsp; 5%</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="overview-content">
-          <div class="content">
-            <div class="likes">
-              <p>Likes</p>
-              <img src="images/icon-instagram.svg" alt="">
-            </div>
-            <div class="likes">
-              <h2>18</h2>
-              <div class="username">
-                <img src="images/icon-up.svg" alt="">
-                <p>&nbsp; 4%</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="overview-content">
-          <div class="content">
-            <div class="likes">
-              <p>Page Views</p>
+            <div class="username">
               <img src="images/icon-twitter.svg" alt="">
+              <p>&nbsp; @moekaba</p>
             </div>
-            <div class="likes">
-              <h2>102</h2>
-              <div class="username">
-                <img src="images/icon-up.svg" alt="">
-                <p>&nbsp; 6%</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="overview-content">
-          <div class="content">
-            <div class="likes">
-              <p>Likes</p>
-              <img src="images/icon-twitter.svg" alt="">
-            </div>
-            <div class="likes">
-              <h2>56</h2>
-              <div class="username">
-                <img src="images/icon-down.svg" alt="">
-                <p>&nbsp; 8%</p>
-              </div>
+            <h1>1203</h1>
+            <h4>Followers</h4>
+            <div class="username">
+              <img src="images/icon-up.svg" alt="">
+              <p>&nbsp; 155 today</p>
             </div>
           </div>
         </div>
-        <div class="overview-content">
+        <div class="accounts-content">
           <div class="content">
-            <div class="likes">
-              <p>Page Views</p>
+            <div class="username">
+              <img src="images/icon-instagram.svg" alt="">
+              <p>&nbsp; @moekaba</p>
+            </div>
+            <h1>769</h1>
+            <h4>Followers</h4>
+            <div class="username">
+              <img src="images/icon-up.svg" alt="">
+              <p>&nbsp; 12 today</p>
+            </div>
+          </div>
+        </div>
+        <div class="accounts-content">
+          <div class="content">
+            <div class="username">
               <img src="images/icon-youtube.svg" alt="">
+              <p>&nbsp; Moe Kaba</p>
             </div>
-            <div class="likes">
-              <h2>38</h2>
-              <div class="username">
-                <img src="images/icon-up.svg" alt="">
-                <p>&nbsp; 5%</p>
-              </div>
+            <h1>348</h1>
+            <h4>Subcribers</h4>
+            <div class="username">
+              <img src="images/icon-up.svg" alt="">
+              <p>&nbsp; 2 today</p>
             </div>
           </div>
         </div>
-        <div class="overview-content">
-          <div class="content">
-            <div class="likes">
-              <p>Likes</p>
-              <img src="images/icon-youtube.svg" alt="">
+      </div>
+      <div class="overview">
+        <h3>Overview - Today</h3>
+        <div class="accounts">
+          <div class="overview-content">
+            <div class="content">
+              <div class="likes">
+                <p>Page Views</p>
+                <img src="images/icon-facebook.svg" alt="">
+              </div>
+              <div class="likes">
+                <h2>102</h2>
+                <div class="username">
+                  <img src="images/icon-up.svg" alt="">
+                  <p>&nbsp; 9%</p>
+                </div>
+              </div>
             </div>
-            <div class="likes">
-              <h2>18</h2>
-              <div class="username">
-                <img src="images/icon-down.svg" alt="">
-                <p>&nbsp; 20%</p>
+          </div>
+          <div class="overview-content">
+            <div class="content">
+              <div class="likes">
+                <p>Likes</p>
+                <img src="images/icon-facebook.svg" alt="">
+              </div>
+              <div class="likes">
+                <h2>56</h2>
+                <div class="username">
+                  <img src="images/icon-up.svg" alt="">
+                  <p>&nbsp; 10%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overview-content">
+            <div class="content">
+              <div class="likes">
+                <p>Page Views</p>
+                <img src="images/icon-instagram.svg" alt="">
+              </div>
+              <div class="likes">
+                <h2>38</h2>
+                <div class="username">
+                  <img src="images/icon-up.svg" alt="">
+                  <p>&nbsp; 5%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overview-content">
+            <div class="content">
+              <div class="likes">
+                <p>Likes</p>
+                <img src="images/icon-instagram.svg" alt="">
+              </div>
+              <div class="likes">
+                <h2>18</h2>
+                <div class="username">
+                  <img src="images/icon-up.svg" alt="">
+                  <p>&nbsp; 4%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overview-content">
+            <div class="content">
+              <div class="likes">
+                <p>Page Views</p>
+                <img src="images/icon-twitter.svg" alt="">
+              </div>
+              <div class="likes">
+                <h2>102</h2>
+                <div class="username">
+                  <img src="images/icon-up.svg" alt="">
+                  <p>&nbsp; 6%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overview-content">
+            <div class="content">
+              <div class="likes">
+                <p>Likes</p>
+                <img src="images/icon-twitter.svg" alt="">
+              </div>
+              <div class="likes">
+                <h2>56</h2>
+                <div class="username">
+                  <img src="images/icon-down.svg" alt="">
+                  <p>&nbsp; 8%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overview-content">
+            <div class="content">
+              <div class="likes">
+                <p>Page Views</p>
+                <img src="images/icon-youtube.svg" alt="">
+              </div>
+              <div class="likes">
+                <h2>38</h2>
+                <div class="username">
+                  <img src="images/icon-up.svg" alt="">
+                  <p>&nbsp; 5%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overview-content">
+            <div class="content">
+              <div class="likes">
+                <p>Likes</p>
+                <img src="images/icon-youtube.svg" alt="">
+              </div>
+              <div class="likes">
+                <h2>18</h2>
+                <div class="username">
+                  <img src="images/icon-down.svg" alt="">
+                  <p>&nbsp; 20%</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <div class="attribution">
+      Coded by <a href="https://www.mohamedkaba.dev"  target="_blank">Mohamed Kaba</a>.
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     </div>
-
-  </section>
-  <div class="attribution">
-    Coded by <a href="https://www.mohamedkaba.dev"  target="_blank">Mohamed Kaba</a>.
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-  </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
