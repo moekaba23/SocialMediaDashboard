@@ -29,7 +29,7 @@ body {
 }
 
 .header {
-  width: 80%;
+  width: 77%;
   padding: 2% 0;
   margin: auto;
   display: flex;
@@ -39,7 +39,7 @@ body {
 .header-btn {
   position: absolute;
   top: 35px;
-  right: 180px;
+  right: 160px;
   display: flex;
   align-items: center;
 }
@@ -106,7 +106,7 @@ h1, h2{
 
 h3 {
   color: var(--small-text-clr);
-  margin-top: 10px;
+  margin-left: 20px;
 }
 
 h4 {
@@ -141,10 +141,11 @@ h4 {
 .accounts-content {
   height: 200px;
   width: 240px;
-  margin-bottom: 1em;
   background-color: var(--content-clr);
   text-align: center;
-  border-radius: .5em;
+  margin: auto;
+  margin-bottom: 1em;
+  border-radius: .35em;
   border: solid 5px red;
   border-right-style: none;
   border-left-style: none;
@@ -164,10 +165,11 @@ h4 {
 .overview-content {
   height: 100px;
   width: 240px;
+  margin: auto;
   margin-bottom: 1em;
   background-color: var(--content-clr);
   text-align: center;
-  border-radius: .5em;
+  border-radius: .35em;
   transition: 0.5s;
 }
 
