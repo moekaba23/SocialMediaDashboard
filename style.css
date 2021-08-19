@@ -7,7 +7,6 @@
 
 body {
   background-color: var(--body-bg-clr);
-
 }
 
 :root {
@@ -30,14 +29,13 @@ body {
 
 .header {
   width: 77%;
-  padding: 2% 0;
+  padding: 2em 0;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
 
 .header-btn {
-  position: absolute;
   top: 35px;
   right: 160px;
   display: flex;
@@ -51,12 +49,12 @@ body {
 }
 
 .toggle input {
-    position: absolute;
-    cursor: pointer;
-    right: 0px;
-    width: 50px;
-    z-index: 1;
-    opacity: 0;
+  position: absolute;
+  cursor: pointer;
+  right: 0px;
+  width: 50px;
+  z-index: 1;
+  opacity: 0;
 }
 
 .dark-toggle {
@@ -81,11 +79,11 @@ body {
   transition: 0.5s;
 }
 
-input:checked + .dark-toggle {
+input:checked+.dark-toggle {
   background: #00a67e;
 }
 
-input:checked + .dark-toggle::before {
+input:checked+.dark-toggle::before {
   transform: translateX(27px);
 }
 
@@ -99,10 +97,9 @@ p {
   color: var(--small-text-clr);
 }
 
-h1, h2{
+h1, h2 {
   color: var(--big-text-clr);
 }
-
 
 h3 {
   color: var(--small-text-clr);
@@ -196,4 +193,22 @@ h4 {
 
 .attribution {
   color: var(--small-text-clr);
+  font-size: 11px;
+  text-align: center;
+  margin: 2em 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media(max-width: 600px) {
+  .header {
+    margin: auto;
+    display: block;
+  }
+
+  .header-btn {
+    padding-top: 1em;
+  }
 }
