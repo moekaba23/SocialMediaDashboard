@@ -132,7 +132,7 @@ h4 {
 .accounts {
   padding: 2em 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(4, minmax(240px, 1fr));
 }
 
 .accounts-content {
@@ -202,6 +202,12 @@ h4 {
   color: hsl(228, 45%, 44%);
 }
 
+@media(max-width: 1200px) {
+  .accounts {
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+  }
+}
+
 @media(max-width: 600px) {
   .header {
     margin: auto;
@@ -210,5 +216,9 @@ h4 {
 
   .header-btn {
     padding-top: 1em;
+  }
+
+  .accounts {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
 }
