@@ -130,9 +130,9 @@ h4 {
 }
 
 .accounts {
-  padding: 2em 0;
   display: grid;
   grid-template-columns: repeat(4, minmax(240px, 1fr));
+  padding: 2em 0;
 }
 
 .accounts-content {
@@ -152,6 +152,7 @@ h4 {
 
 .accounts-content:hover {
   background-color: var(--hover-clr);
+  transform: translateY(-5px);
   transition: 0.5s;
 }
 
@@ -172,6 +173,7 @@ h4 {
 
 .overview-content:hover {
   background-color: var(--hover-clr);
+  transform: translateY(-5px);
   transition: 0.5s;
 }
 
