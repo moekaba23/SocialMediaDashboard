@@ -9,6 +9,7 @@ body {
   background-color: var(--body-bg-clr);
 }
 
+/* Variables */
 :root {
   --body-bg-clr: #fff;
   --big-text-clr: #000;
