@@ -1,6 +1,13 @@
 let darkMode = localStorage.getItem('darkMode');
 const darkModeToggle = document.querySelector('.toggle input');
 
+//const darkModeBtn = localStorage.getItem('darkModeBtn');
+const darkBtn = () => {
+  document.querySelector('span').className = 'input:checked+.dark-toggle';
+
+}
+//document.querySelector('span');
+
 // Check if dark mode is enableDarkMode
 // if enabled, turn it off
 // if disabled, turn it on
@@ -21,7 +28,11 @@ const disableDarkMode = () => {
 
 if (darkMode === 'enabled') {
   enableDarkMode();
-};
+}
+
+if (darkMode === 'enabled') {
+  darkBtn();
+}
 
 darkModeToggle.addEventListener('click', () => {
   darkMode = localStorage.getItem('darkMode');
